@@ -190,8 +190,6 @@ function genera_valores() {
     fi
   fi
 
-echo "Entero "$entero
-
   for i in $(seq 1 $numero)
   do
     valor=$(shuf -i $minimo-$maximo -n 1)
