@@ -23,7 +23,7 @@ function muestraayuda_genera_lienzo_lineas_horizontales() {
 
 }
 
-function genera_lienzo_lineas() {
+function genera_lienzo_lineas_horizontales() {
 
 while [[ $# -gt 0 ]]
 do
