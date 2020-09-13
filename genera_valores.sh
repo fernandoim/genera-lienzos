@@ -225,4 +225,6 @@ function genera_valores() {
 }
 
 
-genera_valores $*
+if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
+  genera_valores $*
+fi
