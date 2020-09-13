@@ -82,8 +82,6 @@ color2=$(convert -list color | cut -f 1 -d " " | shuf -n 1)
 let alturagradiente=$altura*40/100
 let alturauniforme=$altura*20/100
 
-convert -size 500x200 gradient:Red-Blue -size 500x100 xc:Blue -size 500x200 gradient:Blue-Red -append doblegradiente.png
-
 
 instruccion="convert -size "$anchura"x"$alturagradiente" gradient:"$color1"-"$color2" -size "$anchura"x"$alturauniforme" xc:"$color2" -size "$anchura"x"$alturagradiente" gradient:"$color2"-"$color1" -append "$ficherosalida
 eval $instruccion
